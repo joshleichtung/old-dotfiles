@@ -14,9 +14,12 @@ set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 set hlsearch      " turn on search highlighting
 set ignorecase smartcase
-set bg=light
+set bg=dark
 set clipboard=unnamed
 set scrolloff=3
+
+" Fix color for solarized
+set t_Co=256
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -86,9 +89,9 @@ if executable('ag')
 endif
 
 " Color scheme
-colorscheme elflord
-highlight NonText guibg=#060606
-highlight Folded  guibg=#0A0A0A guifg=#9090D0
+colorscheme solarized
+" highlight NonText guibg=#060606
+" highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
 " Numbers
 set relativenumber
