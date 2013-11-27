@@ -14,8 +14,9 @@ set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 set hlsearch      " turn on search highlighting
 set ignorecase smartcase
-set relativenumber
 set bg=light
+set clipboard=unnamed
+set scrolloff=3
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -90,8 +91,25 @@ highlight NonText guibg=#060606
 highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
 " Numbers
-set number
+set relativenumber
 set numberwidth=5
+
+" Toggles relative number
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <C-n> :call NumberToggle()<cr>
+
+" Set split widths
+set winwidth=84
+set winheight=5
+set winminheight=5
+set winheight=999
 
 " Snippets are activated by Shift+Tab
 let g:snippetsEmu_key = "<S-Tab>"
