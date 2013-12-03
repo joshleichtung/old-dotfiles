@@ -89,7 +89,7 @@ if executable('ag')
 endif
 
 " Color scheme
-colorscheme solarized
+colorscheme elflord
 " highlight NonText guibg=#060606
 " highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
@@ -154,7 +154,7 @@ set splitbelow
 set splitright
 
 " Toggle search highlight
-nnoremap <CR> :nohlsearch<CR><CR>
+nnoremap <CR> :nohlsearch<CR>
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j

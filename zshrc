@@ -73,5 +73,11 @@ unsetopt nomatch
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
+# nitrous stuff
 export PATH="$HOME/.parts/autoparts/bin:$PATH"
 eval "$(parts init -)"
+
+export PATH="$HOME/local/bin:$PATH"
+
+# enable 256 color prompt
+export TERM=xterm-256color
