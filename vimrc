@@ -154,7 +154,7 @@ set splitbelow
 set splitright
 
 " Toggle search highlight
-nnoremap <CR> :nohlsearch<CR><CR>
+nnoremap <CR> :nohlsearch<CR>
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
