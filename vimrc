@@ -108,8 +108,9 @@ endfunc
 
 nnoremap <C-n> :call NumberToggle()<cr>
 
-" Set split widths
+" Set split widths for auto resizing
 set winwidth=84
+set winminwidth=40
 set winheight=5
 set winminheight=5
 set winheight=999
